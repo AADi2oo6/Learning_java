@@ -14,9 +14,11 @@ class Employee{
         return salary;
     }
 
-
+}
 
 public class o41_GetterSetter {
-    
-}
+    public static void main(String args[])
+    {
+        System.out.println("T");
+    }
 }

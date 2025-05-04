@@ -15,10 +15,12 @@ class Employee{
     }
 
 
-
+}
 
 
 public class o42_ThisKeyword {
-    
-}
+    public static void main(String args[])    
+    {
+        System.out.println("This is the o42");
+    }
 }
