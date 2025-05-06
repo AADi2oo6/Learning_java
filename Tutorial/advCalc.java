@@ -1,4 +1,4 @@
-public class o48_advCalc extends calc {
+public class advCalc extends calc {
     public int prod(int x ,int y){
         return x*y;
     }

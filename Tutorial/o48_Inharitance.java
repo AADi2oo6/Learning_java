@@ -6,13 +6,12 @@ public class o48_Inharitance {
         System.out.println("The sum of the value is : "+one.add(123,123));
 
         // now i am going to create a new file advCalc.java which will inharit the funciton of the calc.java
-        o48_advCalc Calc = new o48_advCalc();
+        advCalc Calc = new advCalc();
         // now i can use functions of both calc and advCalc
         System.out.println(Calc.add(213,123));
         System.out.println(Calc.sub(213,123));
         System.out.println(Calc.div(213,123));
         System.out.println(Calc.prod(213,123));
         
-
     }
 }
