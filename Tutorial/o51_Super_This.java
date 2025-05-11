@@ -32,8 +32,9 @@ public class o51_Super_This {
         B obj1 = new B(123);// This has Parameter so will exces the constructor with Parameter
 
         // what if we want to call both the constructor of the class ( for this case we need to use the "this();" instead of the super() )
-
+        
         System.out.println("Using the this keyword for calling the constructor");
         B obj2 = new B(234);
+        System.out.println(obj2+obj2.toString());
     }
 }
