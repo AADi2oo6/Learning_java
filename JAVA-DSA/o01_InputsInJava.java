@@ -32,6 +32,6 @@ public class o01_InputsInJava{
 
         System.out.println(num1+num2);
 
-        
+        input.close();
     }
 }
