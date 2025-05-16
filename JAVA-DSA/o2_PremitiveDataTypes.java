@@ -24,6 +24,8 @@ public class o2_PremitiveDataTypes{
 
         // 7. boolean
         boolean bol = true;
+        System.out.println(x+Name+letter+y+largeDecimalNumber+largeIntNumber+bol);
+
 
 
         
