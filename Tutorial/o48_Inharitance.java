@@ -2,7 +2,7 @@
 
 public class o48_Inharitance {
     public static void main(String[] args) {
-        calc one = new calc();//when the object of calc is created then only the calc.java file will be compiled autometically.
+        Calc one = new Calc();//when the object of calc is created then only the calc.java file will be compiled autometically.
         System.out.println("The sum of the value is : "+one.add(123,123));
 
         // now i am going to create a new file advCalc.java which will inharit the funciton of the calc.java

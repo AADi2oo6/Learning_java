@@ -1,4 +1,4 @@
-class Employee{
+class Emp{
     private int id ;
     private int salary;
     String name ;
@@ -20,5 +20,7 @@ public class o41_GetterSetter {
     public static void main(String args[])
     {
         System.out.println("T");
+        Emp Aditya = new Emp();
+        Aditya.name = "Aditya Sharma";
     }
 }

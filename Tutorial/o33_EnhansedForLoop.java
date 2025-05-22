@@ -1,4 +1,4 @@
-class report{
+class Report{
     String Name;
     double cgpa;
     int PRN;
@@ -17,24 +17,24 @@ public class o33_EnhansedForLoop {
         }
 
 
-        report student1 = new report();
+        Report student1 = new Report();
         student1.Name = "Aditya Sharma";
         student1.cgpa = 9.05;
         student1.PRN = 12415040;
 
-        report student2 = new report();
+        Report student2 = new Report();
         student2.Name = "Aryan Wasu";
         student2.cgpa = 9.20;
         student2.PRN = 12412171;
 
-        report student3 = new report();
+        Report student3 = new Report();
         student3.Name = "Harsh Gade";
         student3.cgpa = 9.45;
         student3.PRN = 12415593;
 
         //lets create an arry of objects syntax given below;
         //<ErrayElemType> <arrayName> = new <errayElemType>[<size>];
-        report sem1[] = new report[3];
+        Report sem1[] = new Report[3];
         sem1[0] = student1;
         sem1[1] = student2 ;
         sem1[2] = student3;
@@ -43,7 +43,7 @@ public class o33_EnhansedForLoop {
 
         }
         System.out.println("printing values with  the help of enhansed for loop :");
-        for(report i : sem1){
+        for(Report i : sem1){
             System.out.println(String.format("Name : %s ; cgpa : %f ; PRN : %d" , i.Name,i.cgpa,i.PRN));
 
         }

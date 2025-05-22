@@ -1,21 +1,21 @@
 //Dynamic Method Dispatch: with the help of this we can create a verialb of a extended calss with type of parant calss
-class A{
+class A1{
     public void show(){
         System.out.println("This is Class A!");
     }
 }
-class B extends A{
+class B1 extends A1{
     public void show(){
         System.out.println("This is class B");
     }
 }
 
-class computer{
+class Computer{
     public void config(){
         System.out.println("Conatains CPU+GPU+RAM+ROM");
     }
 }
-class laptop extends computer{
+class laptop extends Computer{
     public void config1(){
         System.out.println("LightWeight, portable, energy Effecient");
     }
@@ -23,18 +23,18 @@ class laptop extends computer{
 public class o56_DynamicMethodDispatch {
     public static void main(String[] args) {
         System.out.println("Now I am going to create an element of class A");
-        A ObjA = new A();
+        A1 ObjA = new A1();
         // ObjA is of object A and of type A ;
         ObjA.show();// this will print the value of the show present in the class A
-        B ObjB = new B(); //  objB is of class b and type B;
+        B1 ObjB = new B1(); //  objB is of class b and type B;
         ObjB.show(); // this will show the contnet of class B because of method overridding
 
         // As both have the show() and B is made from A then we can create 
-        A objAB = new B(); // as B is child of A we can create a reference of A form an object of B (objAB) type is A
+        A1 objAB = new B1(); // as B is child of A we can create a reference of A form an object of B (objAB) type is A
         objAB.show();
 
         // more easy example to undersatnd this
-        computer Acer = new laptop(); // now we can say that acer is a computer of type laptop
+        Computer Acer = new laptop(); // now we can say that acer is a computer of type laptop
         Acer.config();
         // Acer.config1();
 

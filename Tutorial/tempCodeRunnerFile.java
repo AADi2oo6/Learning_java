@@ -1,17 +1,21 @@
 // import java.lang.classfile.instruction.ConstantInstruction.ArgumentConstantInstruction;
 
-class Sem1_Report{
-    String Name ;
-    int PRN ;
-    Double cgpa ;
-}
+
+import java.util.Scanner;
 public class tempCodeRunnerFile{
     public static void main(String args[]){
-        int x[] = new int[5];
-        for (int i = 0; i<5;i++){
-            x[i] = (int)Math.random()*10;
-        }
-       
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter The value of X and Y : ");
+        int x = input.nextInt();
+        int y = input.nextInt();
+//        System.out.println(String.for);
+        if (x>y){
+            System.out.println(String.format("X : %d is greater then Y : %d",x,y));
 
+        }
+        else {
+            System.out.println(String.format("Y : %d is greater then X : %d",y,x));
+
+        }
     }
 }

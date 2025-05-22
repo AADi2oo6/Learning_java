@@ -1,12 +1,12 @@
 import java.util.Scanner;
 public class Q2_Amstrong {
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number : ");
         int num = input.nextInt(); 
         boolean resutl = isAmstrong(num);
         System.out.println(resutl);
+        input.close();
     }
     static boolean isAmstrong(int x) {
         String str = String.valueOf(x);

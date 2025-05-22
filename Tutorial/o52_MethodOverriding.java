@@ -3,23 +3,23 @@
 // in Method overridig if we create a class and innharit it from another class 
 // if both the class have the same method then the method in the actual class will not be called 
 // instead the method which is in the actual calss will be called
-class A{
+class A3{
     public void show(){
-        System.out.println("This is of class A");
+        System.out.println("This is of class A3");
 
     }
 }
-class B extends A{
+class B2 extends A3{
     @Override
     public void show(){
-        System.out.println("This is of Class B");
+        System.out.println("This is of Class B2");
     }
 }
 
 public class o52_MethodOverriding {
 
     public static void main(String[] args) {
-        B obj = new B();
+        B2 obj = new B2();
         obj.show();
     }
 }

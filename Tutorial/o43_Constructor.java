@@ -2,10 +2,10 @@
 //Constructor has no return type
 // Constructors can be used to initilize the values of the variables
 //Constructors can be autometically called when the calls is created 
-class Human{
+class Human0{
     private String Name;
     private int Age;
-    public Human(){
+    public Human0(){
         Name = "Not Avilable";
         Age = 00;
         System.out.println("Constructor colled!!");
@@ -28,7 +28,7 @@ class Human{
 public class o43_Constructor {
     public static void main(String[] args)
     {
-        Human Aditya = new Human();
+        Human0 Aditya = new Human0();
         Aditya.SetName("Aditya Sharma");
         Aditya.setAge(19);
 

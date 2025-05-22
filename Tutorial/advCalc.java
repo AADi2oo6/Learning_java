@@ -1,4 +1,4 @@
-public class advCalc extends calc {
+public class advCalc extends Calc {
     public int prod(int x ,int y){
         return x*y;
     }

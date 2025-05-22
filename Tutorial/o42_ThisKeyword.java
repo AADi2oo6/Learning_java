@@ -1,4 +1,4 @@
-class Employee{
+class Employee1{
     private int id ;
     private int salary;
     String name ;
@@ -22,5 +22,7 @@ public class o42_ThisKeyword {
     public static void main(String args[])    
     {
         System.out.println("This is the o42");
+        Employee1 Aditya = new Employee1();
+        Aditya.name = "Shahil Sharma";
     }
 }
