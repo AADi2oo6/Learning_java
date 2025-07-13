@@ -8,9 +8,9 @@ public class o6_ScopeOfBlock {
         // if i create a block and try to change the value of x or str it will change it
         {
             x = 534;
-            str = "Sharma";// in a block we can access the global veriables
+            str = "Sharma";// in a block we can access the global variables
         
-            int y = 234;// but the veriables defined inside the block can't be used outside
+            int y = 234;// but the variables defined inside the block can't be used outside
         }
         // System.out.println(y); this will give an error
     }

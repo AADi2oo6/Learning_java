@@ -4,17 +4,17 @@ public class o3_SwitchCase {
     public static void main(String[] args) {
         Scanner data = new Scanner(System.in);
         int x = 0;
-        while(x ==0 ){
+        while (x == 0){
 
             System.out.print("Enter the Value for input: ");
             String input = data.next();
             
-            // lets see the different was to check the values of the input data;
-            if (input.equals("Aditya"))  {// if (input == "Aditya"){
+            // let's see the different was to check the values of the input data;
+            if (input.equals("Aditya"))  {// if (input == "Aditya"){ // or can use  Objects.equals(input,value);
                 System.out.println("The input contains your Name");
             }
             else{
-                System.out.println("INput does not contain your name");
+                System.out.println("Input does not contain your name");
             }
             
             // Now lets use the Switch case statuemets:

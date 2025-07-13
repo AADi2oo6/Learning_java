@@ -1,21 +1,24 @@
-// import java.lang.classfile.instruction.ConstantInstruction.ArgumentConstantInstruction;
-
-
+// import java.lang.class file.instruction.ConstantInstruction.ArgumentConstantInstruction;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Objects;
 import java.util.Scanner;
+
 public class tempCodeRunnerFile{
-    public static void main(String args[]){
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter The value of X and Y : ");
-        int x = input.nextInt();
-        int y = input.nextInt();
-//        System.out.println(String.for);
-        if (x>y){
-            System.out.println(String.format("X : %d is greater then Y : %d",x,y));
-
+    static void swap(int[] x){
+//        System.out.println(l/2);
+    }
+    public static void main(String[] args) {
+        int[] x = {1,2,3,4,5};
+        int l = x.length;
+        for(int a = 0; a < l/2 ;a++){
+            x[a] = x[l-1-a]+x[a];
+            x[l-1-a] = x[a]-x[l-1-a];
+            x[a] = x[a]-x[l-1-a];
+            System.out.println(Arrays.toString(x));
         }
-        else {
-            System.out.println(String.format("Y : %d is greater then X : %d",y,x));
 
-        }
+
+        System.out.println(Arrays.toString(x));
     }
 }

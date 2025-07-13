@@ -12,6 +12,8 @@ public class o8_VariableArgs {
     //syntax : "dataType ...objName"
     static void getArr(int ...i){ // will return a array of int
         System.out.println(Arrays.toString(i));
+        int x1 = i.length;
+        System.out.println("The length of the array is : "+x1);
         for (int x: i){
             System.out.println(x);
         }

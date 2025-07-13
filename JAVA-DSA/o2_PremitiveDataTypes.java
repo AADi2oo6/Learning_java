@@ -1,4 +1,4 @@
-// premitive is a Data type which can't be break further 
+// primitive is a Data type which can't be break further
 
 public class o2_PremitiveDataTypes{
     public static void main(String[] args){

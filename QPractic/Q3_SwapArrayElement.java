@@ -11,6 +11,16 @@ public class Q3_SwapArrayElement {
         swap(array,input.nextInt(),input.nextInt());
         System.out.println(" Modified Array: "+ Arrays.toString(array));
 
+
+        int[] x = {1,2,3,4,5};
+        int l = x.length;
+        for(int a = 0; a < l/2 ;a++){
+            x[a] = x[l-1-a]+x[a];
+            x[l-1-a] = x[a]-x[l-1-a];
+            x[a] = x[a]-x[l-1-a];
+            System.out.println(Arrays.toString(x));
+        }
+
     }
 
     static void swap(int[] array ,int i1, int i2){
