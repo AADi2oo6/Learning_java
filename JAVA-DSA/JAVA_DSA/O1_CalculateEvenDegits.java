@@ -1,6 +1,21 @@
 package JAVA_DSA;
 // Q: In an array of elements calculate number of elements having even number of digits.
-
+/*
+class Solution {
+    public int findNumbers(int[] nums) {
+        int counter = 0;
+        for (int i : nums){
+            if (Counteven(i)%2==0){
+                counter +=1;
+            }
+        }
+        return counter;
+    }
+    int Counteven(int x){
+        return (int)Math.log10(x)+1;
+    }
+}
+ */
 public class O1_CalculateEvenDegits {
     static int EvenDegits(int[] x ){
         int result=0;
