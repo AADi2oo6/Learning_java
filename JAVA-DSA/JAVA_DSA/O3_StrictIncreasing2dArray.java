@@ -34,7 +34,7 @@ public class O3_StrictIncreasing2dArray {
         while (rowStart<rowEnd-1){
             int middle = rowStart+(rowEnd-rowStart)/2;
             if (arr[middle][colMid] == target){
-                return new int[] {middle,colMid}
+                return new int[] {middle,colMid};
             }
             else if (arr[middle][colMid] < target){
                 rowStart = middle;
@@ -44,6 +44,13 @@ public class O3_StrictIncreasing2dArray {
             }
 
             }
+//        now after exiting this loop we will have two rows if answer not found ;
+//        now check for the element in the mid-column
+        if (arr[rowStart][colMid] == target){
+            return new int[] {rowStart,colMid};
+        }
+//       now let check for the element in the 4 parts
+        else if()
 
         }
 
