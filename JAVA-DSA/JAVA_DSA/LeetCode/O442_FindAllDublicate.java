@@ -8,27 +8,39 @@ public class O442_FindAllDublicate {
         int[] arr = {4,3,2,7,8,2,3,1};
         System.out.println(findAllDuplicate(arr));
     }
-    static List<Integer> findDuplicates(int[] arr) {
+/*
+class Solution {// got excepted
+    public List<Integer> findDuplicates(int[] arr) {
         List<Integer> ans = new ArrayList<>();
-        int i = 0 ;
-        while(i<arr.length){
-            if (arr[i]!=i+1){
-                int correct = arr[i]-1;
-                if(arr[i]!=arr[correct]){
-                    swap(arr,i,correct);
-                }
-                else{
-                    ans.add(arr[i]);
-                    i++;
-                }
-
+        int i = 0;
+        while (i<arr.length){
+            int correct = arr[i]-1;
+            if (arr[i]!=arr[correct]){
+                swap(arr,i,correct);
             }
             else{
                 i++;
             }
         }
+        for (i = 0 ; i<arr.length;i++){
+            if (i!=arr[i]-1){
+                ans.add(arr[i]);
+            }
+        }
         return ans;
+
     }
+    void swap(int arr[] , int a,int b){
+        int temp= arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+}
+ */
+
+
+
+//    this method takes more time
     static List<Integer> findAllDuplicate(int[] arr) {
         List<Integer> ans = new ArrayList<>();
         int i = 0 ;
