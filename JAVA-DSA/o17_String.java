@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class o17_String {
     public static void main(String[] args){
         String Name = "Aditya Sharma";// this is a way to declare the string
@@ -26,5 +28,13 @@ public class o17_String {
         for(int i =0; i<Name.length();i++){
             System.out.println(Name.charAt(i));
         }
+
+//        String methods;
+        String MyName = "Aditya Sharma";
+        System.out.println(Arrays.toString(MyName.toCharArray()));
+        System.out.println(MyName.toUpperCase());
+        System.out.println(MyName.indexOf('y'));
+        System.out.println(Arrays.toString(MyName.split(" ")));
+
     }
 }

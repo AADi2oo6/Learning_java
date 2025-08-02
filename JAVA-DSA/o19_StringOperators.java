@@ -1,4 +1,4 @@
-public class o20_StringOperators {
+public class o19_StringOperators {
     public static void main(String[] args) {
         System.out.println('a'+'b'); // '' represents character and odding a character its asci value gets added
         System.out.println((char)('a'+'b'));
