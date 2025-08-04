@@ -15,7 +15,7 @@ public class O22_Recursion {
         return ;// for breaking the loop;
 
     }
-//    find n'th hibachi
+//    find n'th fabonachi
     static int fabonachi(int n){
         if(n<2 && n>=0){//base condition
             return n;
@@ -23,29 +23,28 @@ public class O22_Recursion {
         return fabonachi(n-2)+fabonachi(n-1);
     }
     static int binarySearch(int[] arr, int start, int end, int target) {
-        if (start > end) {
-            return -1; // base case: not found
+        // BASE CASE:
+        if (start>end){
+            return -1;
         }
-
-        int middle = start + (end - start) / 2;
-
-        if (arr[middle] == target) {
-            return middle; // base case: found
+        int middle = start+(end-start)/2;
+        if(arr[middle]==target){
+            return middle;
         }
-
-        if (arr[middle] < target) {
-            return binarySearch(arr, middle + 1, end, target); // ← return the result
-        } else {
-            return binarySearch(arr, start, middle - 1, target); // ← return the result
+        else if(arr[middle]<target) {
+            return binarySearch(arr,middle+1,end,target);
         }
+        return binarySearch(arr,start,middle-1,target);
+
+
     }
 
 
     public static void main(String[] args) {
-//        System.out.println(factorial(5));
-//        print(10);
+        System.out.println(factorial(5));
+        print(10);
         int[] arr = {1,2,3,4,5,6,7,8,9};
-        System.out.println(binarySearch(arr,0,arr.length,7));
-//        System.out.println(fabonachi(6));
+        System.out.println("Binary Search Resutl: "+binarySearch(arr,0,arr.length,7));
+        System.out.println(fabonachi(6));
     }
 }
