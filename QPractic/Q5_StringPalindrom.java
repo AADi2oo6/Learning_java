@@ -16,6 +16,6 @@ public class Q5_StringPalindrom {
     }
 
     public static void main(String[] args) {
-        System.out.println(checkPalindrom("1221"));
+        System.out.println(checkPalindrom("1221 "));
     }
 }
