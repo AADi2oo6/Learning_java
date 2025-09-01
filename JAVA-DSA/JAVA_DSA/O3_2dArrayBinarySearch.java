@@ -15,6 +15,7 @@ public class O3_2dArrayBinarySearch {
 
         }
 
+        return result;
     }
     static int[] searchIn2D(int[][] arr, int target){
         int [] result = {-1,-1};

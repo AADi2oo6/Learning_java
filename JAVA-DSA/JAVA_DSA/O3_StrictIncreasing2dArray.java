@@ -50,9 +50,10 @@ public class O3_StrictIncreasing2dArray {
             return new int[] {rowStart,colMid};
         }
 //       now let check for the element in the 4 parts
-        else if()
+//        else if()
+//
+//        }
 
-        }
-
-}
+        return new int[0];
+    }}
 
