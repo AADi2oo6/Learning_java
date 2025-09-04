@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class o17_String {
+public class o17_String_SubString {
     public static void main(String[] args){
         String Name = "Aditya Sharma";// this is a way to declare the string
         System.out.println(Name);
@@ -35,6 +35,16 @@ public class o17_String {
         System.out.println(MyName.toUpperCase());
         System.out.println(MyName.indexOf('y'));
         System.out.println(Arrays.toString(MyName.split(" ")));
+
+//         SUB-STRING :
+        //In Java, the substring() method is used to extract a portion of a string.
+        // It is part of the String class and returns a new string that is a subset (or "substring") of the original string.
+        String s = "0123456789";
+        String subString = s.substring(5);// beginindex is inclusive
+        System.out.println(subString);
+        subString = s.substring(0,5);// beginindex is inclusive but endIndex is exclusive;
+        System.out.println(subString);
+
 
     }
 }
