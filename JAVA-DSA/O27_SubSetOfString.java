@@ -1,4 +1,3 @@
-package JAVA_DSA;
 public class O27_SubSetOfString {
 //Q: Given a string s Find all the subset of s
     static void subset(String up,String p){

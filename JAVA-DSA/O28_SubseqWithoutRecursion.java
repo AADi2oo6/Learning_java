@@ -1,10 +1,7 @@
-package Recursion.strings;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class SubseqWithoutRecursion
+public class O28_SubseqWithoutRecursion
 {
 //    given an array {1,2,3} return an array with all the subseq of arr without using recursion
     static List<List<Integer>> subSeqMethod2(int[] arr){
