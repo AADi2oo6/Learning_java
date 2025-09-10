@@ -48,6 +48,6 @@ public class O28_SubSequenceOfArr {
         int[] arr1 ={1,2,2};
         int[] arr = {};
 //        subsetsUsingRecursion(arr,arr1);
-        System.out.println(subsetOfDublicate(arr1));
+
     }
 }
