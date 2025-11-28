@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 //stirngbuffer and string builder in java
 public class o35_MutableString {
     public static void main(String args[])
@@ -6,7 +8,7 @@ public class o35_MutableString {
         s += "! Aditya"; // this is not changing the string 
         System.out.println(s);
 
-        StringBuffer ms = new StringBuffer("");
+        StringBuffer ms = new StringBuffer();
         int bufferStringLength = ms.length(); //will give us the name of the bufferstring 
         // NOTE initial lenght of the bufferString is 16;// now it is 0
 
@@ -49,8 +51,9 @@ public class o35_MutableString {
         System.out.println(ms.substring(2,8));
 
         ms.ensureCapacity(40);//we can insure the minimum capacity of the string
-        System.out.println(ms);
+        System.out.print(ms);
 
+        System.out.println("<");
 
      //StringBuffer vs StringBuiilder
 // 1. StringBuffer is threat safe

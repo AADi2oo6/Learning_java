@@ -1,50 +1,27 @@
+import javax.swing.*;
+import java.awt.event.*;
+//import java.awt.event.ActionListener;
 
-import java.util.Arrays;
-
+interface check{
+    void isEvan(int x);}
 public class Temp {
-
-    static void swap(int[][] arr, int x, int y) {
-        int temp = arr[x][y];
-        arr[x][y] = arr[y][x];
-        arr[y][x] = temp;
-    }
-
-    static void reverse(int[][] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[0].length / 2; j++) {
-                int temp = arr[i][j];
-                arr[i][j] = arr[i][arr[0].length - 1 - j];
-                arr[i][arr[0].length - 1 - j] = temp;
-            }
-        }
-    }
-
-    static void sortMatrix(int[][] arr) {
-        // reverse(arr);
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[0].length / 2; j++) {
-                if (i != j) {
-                    swap(arr, i, j);
-                }
-            }
-        }
-
-    }
-
     public static void main(String[] args) {
-        int[][] arr = {{1, 7, 3}, {9, 8, 2}, {4, 5, 6}};
-//    reverse(arr);
-        for (int[] i : arr) {
-            System.out.println(Arrays.toString(i));
+        JFrame f = new JFrame("Buttion");
+        f.setSize(300,300);
+        JButton b = new JButton("Click It!!");
+        b.setBounds(100, 100, 80, 30);
+        f.add(b);
+        f.setLayout(null);
 
-        }
-        System.out.println();
-        reverse(arr); 
-        sortMatrix(arr);
-        reverse(arr);
-        for (int[] i : arr) {
-            System.out.println(Arrays.toString(i));
+        f.setVisible(true);
+        b.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Clicked");
+            }
+        });
 
-        }
+
+
     }
+
 }

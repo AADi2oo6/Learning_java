@@ -10,13 +10,13 @@ class B1 extends A1{
     }
 }
 
-class Computer{
+class Compute_r {
     public void config(){
         System.out.println("Conatains CPU+GPU+RAM+ROM");
     }
 }
-class laptop extends Computer{
-    public void config1(){
+class laptop extends Compute_r {
+    public void config(){
         System.out.println("LightWeight, portable, energy Effecient");
     }
 }
@@ -34,7 +34,7 @@ public class o56_DynamicMethodDispatch {
         objAB.show();
 
         // more easy example to undersatnd this
-        Computer Acer = new laptop(); // now we can say that acer is a computer of type laptop
+        Compute_r Acer = new laptop(); // now we can say that acer is a computer of type laptop
         Acer.config();
         // Acer.config1();
 

@@ -2,7 +2,7 @@
 class Mobile{
     String Brand;
     int price;
-    static String BattryType;// hear the static represetns that all the moble will have the same battry
+    static String BattryType;// hear the static represents that all the moble will have the same battry
     public void discriptin(){
         System.out.println(String.format("Moblile Compeny : %s ; price : %d.00 Rs , Battry Type : %s ;",Brand,price,BattryType));
     }
